@@ -1,1 +1,44 @@
-<p>global-card works!</p>
+<div class="cards">
+    <div class="columns">
+        <div class="column is-6">
+            <div class="card">
+                <div class="card-content">
+                    <h1 class="card-title-text">
+                        Total Confirmed <span id="span-blue">{{data.TotalConfirmed}}</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="column is-6">
+            <div class="card">
+                <div class="card-content">
+                    <h1 class="card-title-text">
+                        Total Deaths <span id="span-red">{{data.TotalDeaths}}</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column is-6">
+            <div class="card">
+                <div class="card-content">
+                    <h1 class="card-title-text">
+                        Total Recovered <span id="span-green"> {{data.TotalRecovered}} </span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="column is-6">
+            <div class="card">
+                <div class="card-content">
+
+                    <h1 class="card-title-text">
+                        Last 24 hours <span id="span-blue"> {{data.NewConfirmed}} </span> <span id="span-green"> {{data.NewRecovered}} </span> <span id="span-red"> {{data.NewDeaths}} </span>
+                    </h1>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

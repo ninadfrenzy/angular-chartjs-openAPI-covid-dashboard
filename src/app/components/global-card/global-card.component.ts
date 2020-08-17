@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Global } from 'src/app/models/global.model';
 
 @Component({
   selector: 'app-global-card',
@@ -8,8 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class GlobalCardComponent implements OnInit {
 
   constructor() { }
-
+  @Input()
+  data: Global;
   ngOnInit(): void {
+    console.log(this.data);
   }
 
 }
