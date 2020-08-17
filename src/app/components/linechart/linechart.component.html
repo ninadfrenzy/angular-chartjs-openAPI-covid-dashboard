@@ -1,0 +1,43 @@
+<div class="card">
+  <div class="card-content" *ngIf="countries">
+    <div class="columns">
+      <div class="column is-3">
+        <mat-form-field class="ml-2" appearance="outline">
+          <mat-label>Country</mat-label>
+          <input type="text"
+                 aria-label="Number"
+                 matInput
+                 [(ngModel)]="selectedCountry"
+                 (ngModelChange)="filterSearchList()"
+                 [matAutocomplete]="auto">
+          <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let option of countriesFilterList" [value]="option" (click)="prepareChartForCountry(option)">
+              {{option}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+      </div>
+      <div class="column is-1">
+        <div class="spinner">
+          <mat-spinner diameter="50" *ngIf="showSpin1 || showSpin2 || showSpin3"></mat-spinner>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="chart-container" *ngIf="lineChartData[0].data.length>0 && lineChartData[1].data.length>0 && lineChartData[2].data.length>0">
+      <canvas
+      baseChart
+      [datasets]="lineChartData"
+      [labels]="lineChartLabels"
+      [options]="lineChartOptions"
+      [colors]="lineChartColors"
+      [legend]="lineChartLegend"
+      [chartType]="lineChartType"
+      id="canvas"
+    ></canvas>
+  </div>
+
+  </div>
+</div>

@@ -1,0 +1,13 @@
+.chart-container{
+    position: relative; 
+    height:80vh; 
+    width: 55vw;
+}
+.dropdown-menu {
+    max-height: 15rem;
+    overflow: auto;
+  }
+.spinner{
+    width: 30px;
+    height: 30px;
+}
