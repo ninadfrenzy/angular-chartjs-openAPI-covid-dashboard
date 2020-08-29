@@ -21,18 +21,37 @@ export class LinechartComponent implements OnInit {
   ];
   lineChartLabels: Label[] = [];
   lineChartOptions: (ChartOptions & { annotation: any }) = {
+    legend: {
+      labels: {
+        fontColor: '#FFF'
+      }
+    },
     responsive: true,
     maintainAspectRatio: false,
     scales: {
       // We use this empty structure as a placeholder for dynamic theming.
-      xAxes: [{}],
+      xAxes: [{
+        gridLines: {
+          drawOnChartArea: true
+        },
+        ticks: {
+          fontColor: '#FFF'
+        }
+      }],
       yAxes: [
         {
           id: 'y-axis-0',
           position: 'left',
           type: 'linear',
+          gridLines: {
+            drawOnChartArea: false
+          },
+          ticks: {
+            fontColor: '#FFF'
+          }
 
         },
+
       ]
     },
     annotation: {
@@ -104,7 +123,7 @@ export class LinechartComponent implements OnInit {
   }
   filterSearchList(): void {
     this.countriesFilterList = this.countries.filter(element => {
-      return element.startsWith(this.selectedCountry);
+      return element.startsWith(this.selectedCountry.toLowerCase());
     });
   }
 

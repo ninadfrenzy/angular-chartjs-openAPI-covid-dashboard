@@ -1,1 +1,16 @@
-<p>bar-chart works!</p>
+<div class="card mt-2">
+    <div class="card-content">
+        <div class="chart-container" *ngIf="barChartData[0].data.length>0">
+            <canvas baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [colors]="barChartColors"
+            [chartType]="barChartType">
+          </canvas>
+        </div>
+    </div>
+</div>
+
+

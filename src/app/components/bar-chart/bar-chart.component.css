@@ -1,0 +1,16 @@
+.chart-container{
+    position: relative; 
+    height:50vh; 
+    width: 25vw;
+}
+.card{
+    border-radius: 10px;
+    background-color: #324164;
+}
+@media screen and (max-width: 768px) {
+    .chart-container{
+        position: relative; 
+        height: 40vh;
+        width: 80vw;
+    }
+  }

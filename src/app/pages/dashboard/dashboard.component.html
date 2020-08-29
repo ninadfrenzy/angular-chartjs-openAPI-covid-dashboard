@@ -1,10 +1,12 @@
+<app-navbar></app-navbar>
 <section class="section" *ngIf="summary">
-    <div class="columns">
+    <div class="columns mb-6">
         <div class="column is-8">
             <app-linechart [data]="countryWiseData"></app-linechart>
         </div>
         <div class="column is-4">
             <app-global-card [data]="globalData"></app-global-card>
+            <app-bar-chart [data]="countryWiseData"></app-bar-chart>
         </div>
     </div>
 </section>

@@ -1,18 +1,83 @@
 .card-title-text{
-    font-size: 1.5rem;
+    font-size: 0.7rem;
 }
 #span-red{
     color: tomato;
-    font-size: 2.5rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 #span-green{
-    color: rgb(0, 187, 93);
-    font-size: 2.5rem;
+    color: rgb(5, 255, 130);
+    font-size: 1rem;
     font-weight: bold;
 }
 #span-blue{
-    color: rgb(0, 97, 207);
-    font-size: 2.5rem;
+    color: rgb(5, 252, 252);
+    font-size: 1rem;
     font-weight: bold;
+}
+.card-icon-blue{
+    font-size: 1rem;
+    /* border: 2px solid rgba(0, 82, 175, 0.9); */
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgba(5, 252, 252, 0.5);
+}
+.card-icon-blue-smaller{
+    font-size: 1rem;
+    /* border: 2px solid rgba(0, 82, 175, 0.9); */
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgba(5, 252, 252, 0.5);
+}
+.card-icon-red{
+    font-size: 1rem;
+    /* border: 2px solid rgba(0, 82, 175, 0.9); */
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgba(255, 45, 45, 0.6);
+}
+.card-icon-red-smaller{
+    font-size: 1rem;
+    /* border: 2px solid rgba(0, 82, 175, 0.9); */
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgba(255, 45, 45, 0.6);
+}
+.content{
+    font-size: 0.8rem;
+    margin-bottom:0;
+}
+.gapless{
+    padding: 0.75rem 0.2rem;
+}
+.card-head-text{
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+.card-icon-green{
+    font-size: 1rem;
+    /* border: 2px solid rgba(0, 82, 175, 0.9); */
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgba(0, 252, 97, 0.5);
+}
+.card-icon-green-smaller{
+    font-size: 1.2rem;
+    /* border: 2px solid rgba(0, 82, 175, 0.9); */
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgba(0, 252, 97, 0.5);
+}
+.card{
+    border-radius: 10px;
+    background-color: #324164;
+    color: white;
+}
+#global-trend-text{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.card-content{
+    padding:0.5rem;
 }

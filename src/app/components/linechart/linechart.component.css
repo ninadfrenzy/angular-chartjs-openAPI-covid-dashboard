@@ -1,13 +1,44 @@
 .chart-container{
     position: relative; 
-    height:80vh; 
-    width: 55vw;
+    height:60vh; 
+    width: 60vw;
+    color: white;
+}
+.no-padding{
+    padding:0;
+}
+.select-title{
+    font-size: 1.5rem;
 }
 .dropdown-menu {
     max-height: 15rem;
     overflow: auto;
   }
-.spinner{
-    width: 30px;
-    height: 30px;
+.search-box{
+    background-color: white;
 }
+.card-chart{
+    border-radius: 10px;
+    background-color: #324164;
+    
+}
+.top-content{
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+}
+.card{
+    border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+    .chart-container{
+        position: relative; 
+        height: 50vh;
+        width: 80vw;
+    }
+    .spinner-box{
+        width: 25%;
+    }
+    .search-box{
+        width: 75% !important;
+    }
+  }

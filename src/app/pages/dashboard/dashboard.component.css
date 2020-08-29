@@ -1,0 +1,13 @@
+section{
+    background-color: #202a41;
+    padding: 1rem 1rem;
+    
+}
+@media screen and (max-width: 480px) {
+    /* app-linechart{
+        display: none;
+    } */
+    /* app-bar-chart{
+        display: none;
+    } */
+  }

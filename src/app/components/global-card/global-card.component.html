@@ -1,44 +1,58 @@
-<div class="cards">
-    <div class="columns">
-        <div class="column is-6">
-            <div class="card">
-                <div class="card-content">
-                    <h1 class="card-title-text">
-                        Total Confirmed <span id="span-blue">{{data.TotalConfirmed}}</span>
-                    </h1>
-                </div>
-            </div>
-        </div>
-        <div class="column is-6">
-            <div class="card">
-                <div class="card-content">
-                    <h1 class="card-title-text">
-                        Total Deaths <span id="span-red">{{data.TotalDeaths}}</span>
-                    </h1>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="columns">
-        <div class="column is-6">
-            <div class="card">
-                <div class="card-content">
-                    <h1 class="card-title-text">
-                        Total Recovered <span id="span-green"> {{data.TotalRecovered}} </span>
-                    </h1>
-                </div>
-            </div>
-        </div>
-        <div class="column is-6">
-            <div class="card">
-                <div class="card-content">
 
-                    <h1 class="card-title-text">
-                        Last 24 hours <span id="span-blue"> {{data.NewConfirmed}} </span> <span id="span-green"> {{data.NewRecovered}} </span> <span id="span-red"> {{data.NewDeaths}} </span>
-                    </h1>
-
+    <div class="columns is-mobile">
+        <div class="column is-6">
+            <div class="card mb-3">
+                <div class="card-content has-text-centered">
+                    <p id="global-trend-text">
+                        Global Trends
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="columns is-vcentered">
+                        <div class="column is-4">
+                            <i class="fas fa-skull card-icon-red"></i>
+                        </div>
+                        <div class="column is-8">
+                            <h1 class="card-title-text">
+                                <span id="span-red">{{data.TotalDeaths}}</span><br> Total Deaths
+                            </h1>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="column is-6">
+            
+            <div class="card mb-2">
+                <div class="card-content">
+                    <div class="columns is-vcentered">
+                        <div class="column is-4">
+                            <i class="fas fa-check card-icon-blue"></i>
+                        </div>
+                        <div class="column is-8">
+                            <h1 class="card-title-text">
+                                <span id="span-blue">{{data.TotalConfirmed}}</span><br> Total Confirmed
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="columns is-vcentered">
+                        <div class="column is-4">
+                            <i class="fas fa-heartbeat card-icon-green"></i>
+                        </div>
+                        <div class="column is-8">
+                            <h1 class="card-title-text">
+                                <span id="span-green">{{data.TotalRecovered}}</span><br> Total Recovered
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-</div>
